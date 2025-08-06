@@ -1,12 +1,44 @@
-# React + Vite
+# 🌿 Plant Care Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive full-stack web application for tracking and managing your plants' care routines — built with **React**, **Node.js**, **MongoDB**, and **Firebase Authentication**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Visit Live Site](https://your-deployed-link.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+| Home Page | Add Plant | Plant Details |
+|-----------|-----------|----------------|
+| ![Home](assets/home.png) | ![Add Plant](assets/add-plant.png) | ![Details](assets/details.png) |
+
+---
+
+## 🚀 Features
+
+- 🔐 Firebase Auth (Email & Google Sign-In)
+- 🪴 Add, edit, delete plants
+- 📷 Upload plant photos
+- 🕒 Track watering and care dates
+- 💡 Responsive design (mobile-friendly)
+- 🌗 Dark and light mode toggle
+- 📅 Auto-fill current date
+- 📊 Filter and sort plants
+- 🧠 Clean UX with Lottie animations and tooltips
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend        | Backend       | Database       | Auth             |
+|-----------------|---------------|----------------|------------------|
+| React, Tailwind | Express.js    | MongoDB Atlas  | Firebase Auth    |
+
+---
+
+## 📂 Folder Structure (Client)
+
