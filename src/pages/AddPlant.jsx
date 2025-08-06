@@ -41,13 +41,13 @@ const AddPlant = () => {
         },
       });
 
-      await Swal.fire({
-        icon: "success",
-        title: "Plant Added!",
-        text: "Your plant has been added successfully.",
-        timer: 2000,
-        showConfirmButton: false,
-      });
+     await Swal.fire({
+  icon: "success",
+  title: "Plant Added!",
+  text: "Your plant has been added successfully.",
+  confirmButtonText: "Sweet! OK",
+  confirmButtonColor: "#22c55e", 
+});
 
       reset();
     } catch (error) {
