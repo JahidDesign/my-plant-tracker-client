@@ -11,7 +11,7 @@ import {
 
 const PlantCard = ({ plant }) => {
   return (
-    <div className="bg-white max-w-6xl rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col overflow-hidden">
+    <div className="bg-white max-w-6xl  shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col overflow-hidden">
       {/* Image */}
       <div className="h-56 w-full overflow-hidden relative">
         <img

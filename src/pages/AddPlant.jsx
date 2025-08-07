@@ -96,8 +96,8 @@ const AddPlant = () => {
       <HeroSection/>
 
       <section className="max-w-4xl mx-auto p-6 mt-10">
-        <div className="bg-white shadow-lg rounded-xl p-6">
-          <h2 className="text-2xl font-semibold text-center mb-6 text-green-700 flex items-center justify-center gap-2">
+        <div className="p-6">
+          <h2 className="text-2xl font-semibold text-left mb-6 text-green-700 flex items-center justify-center gap-2">
             <FaPlusCircle /> Add a New Plant
           </h2>
 

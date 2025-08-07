@@ -11,7 +11,9 @@ import ViewBlog from '../pages/ViewBlog';
 import NotFound from '../pages/NotFound';
 import PrivateRoute from './PrivateRoute';
 import AddBlogPost from '../pages/AddBlogPost';
+import Profile from '../pages/Profile';
 import SearchResults from "../pages/SearchResults";
+
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -24,6 +26,7 @@ export const router = createBrowserRouter([
       { path: '/add-plant', element: <PrivateRoute><AddPlant /></PrivateRoute> },
       { path: '/my-plants', element: <PrivateRoute><MyPlants /></PrivateRoute> },
       { path: '/add-blog', element: <PrivateRoute><AddBlogPost /></PrivateRoute> },
+      { path: '/profile', element: <PrivateRoute><Profile /></PrivateRoute> },
       { path: '/all-plants', element: <AllPlants /> },
       { path: '/plants/:id', element: <PrivateRoute><PlantDetails /></PrivateRoute> },
       { path: '/blogpost/:id', element: <PrivateRoute><ViewBlog /></PrivateRoute> },
