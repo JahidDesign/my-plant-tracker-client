@@ -4,7 +4,7 @@ import { useNavigate, NavLink } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const Profile = () => {
   const { user } = useAuth();

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useAuth } from "../context/AuthContext";
