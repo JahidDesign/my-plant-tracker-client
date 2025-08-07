@@ -6,7 +6,7 @@ import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 
-const Profile = () => {
+const myProfile = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
 
@@ -68,4 +68,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default myProfile;
