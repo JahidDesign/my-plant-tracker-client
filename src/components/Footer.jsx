@@ -62,19 +62,19 @@ const Footer = () => {
             <h3 className="uppercase font-semibold mb-3">Social</h3>
             <div className="flex space-x-4">
               {/* Facebook */}
-              <a href="#" title="Facebook" className="hover:text-green-300 transition">
+              <a href="https://www.facebook.com/groups/531123054326409/" title="Facebook" className="hover:text-green-300 transition">
                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
                   <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5 3.657 9.127 8.438 9.878v-6.987h-2.54v-2.89h2.54v-2.2c0-2.507 1.493-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.873h2.773l-.443 2.89h-2.33v6.987C18.343 21.127 22 17 22 12z" />
                 </svg>
               </a>
               {/* Twitter */}
-              <a href="#" title="Twitter" className="hover:text-green-300 transition">
+              <a href="https://x.com/plantdotfun" title="Twitter" className="hover:text-green-300 transition">
                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
                   <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775a4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184A4.92 4.92 0 0 0 16.616 3c-2.737 0-4.958 2.224-4.958 4.958 0 .388.044.765.128 1.124C7.728 8.865 4.1 6.864 1.671 3.889c-.427.734-.671 1.586-.671 2.494 0 1.722.876 3.241 2.21 4.134a4.934 4.934 0 0 1-2.248-.618v.062c0 2.404 1.71 4.406 3.976 4.857a4.996 4.996 0 0 1-2.239.084c.63 1.967 2.445 3.397 4.6 3.437a9.867 9.867 0 0 1-6.102 2.104c-.397 0-.788-.023-1.174-.067a13.936 13.936 0 0 0 7.548 2.212c9.056 0 14.01-7.503 14.01-14.01 0-.213-.005-.425-.014-.637a10.012 10.012 0 0 0 2.457-2.548z" />
                 </svg>
               </a>
               {/* Instagram */}
-              <a href="#" title="Instagram" className="hover:text-green-300 transition">
+              <a href="https://www.instagram.com/plant.o.art/" title="Instagram" className="hover:text-green-300 transition">
                 <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
                   <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5.25 2.5a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5z" />
                 </svg>
