@@ -7,10 +7,11 @@ import AddPlant from '../pages/AddPlant';
 import MyPlants from '../pages/MyPlants';
 import AllPlants from '../pages/AllPlants';
 import PlantDetails from '../pages/PlantDetails';
-import UpdatePlant from '../pages/UpdatePlant';
+import ViewBlog from '../pages/ViewBlog';
 import NotFound from '../pages/NotFound';
 import PrivateRoute from './PrivateRoute';
 import AddBlogPost from '../pages/AddBlogPost';
+import SearchResults from "../pages/SearchResults";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -19,12 +20,13 @@ export const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login /> },
       { path: '/signup', element: <Signup /> },
+      { path : "/search" , element : <SearchResults />},
       { path: '/add-plant', element: <PrivateRoute><AddPlant /></PrivateRoute> },
       { path: '/my-plants', element: <PrivateRoute><MyPlants /></PrivateRoute> },
       { path: '/add-blog', element: <PrivateRoute><AddBlogPost /></PrivateRoute> },
       { path: '/all-plants', element: <AllPlants /> },
       { path: '/plants/:id', element: <PrivateRoute><PlantDetails /></PrivateRoute> },
-      { path: '/update-plant/:id', element: <PrivateRoute><UpdatePlant /></PrivateRoute> },
+      { path: '/blogpost/:id', element: <PrivateRoute><ViewBlog /></PrivateRoute> },
       { path: '*', element: <NotFound /> },
     ],
   },

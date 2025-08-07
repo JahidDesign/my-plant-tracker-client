@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
+import { useNavigate } from "react-router-dom";
 
 const BlogSection = () => {
   const [blogPosts, setBlogPosts] = useState([]);
+  const navigate = useNavigate(); // ✅ Fix 1
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -20,11 +22,12 @@ const BlogSection = () => {
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800">
       <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-        {/* Featured post (first post) */}
+
+        {/* Featured Post */}
         {blogPosts[0] && (
-          <a
-            href="#"
-            className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50"
+          <div
+            onClick={() => navigate(`/blogpost/${blogPosts[0]._id}`)} // ✅ Clickable card
+            className="cursor-pointer block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50"
           >
             <img
               src={blogPosts[0].imageUrl}
@@ -40,16 +43,16 @@ const BlogSection = () => {
               </span>
               <p>{blogPosts[0].description}</p>
             </div>
-          </a>
+          </div>
         )}
 
-        {/* Grid of the rest */}
+        {/* Grid of remaining posts */}
         <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.slice(1).map((post) => (
-            <a
+            <div
               key={post._id}
-              href="#"
-              className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50"
+              onClick={() => navigate(`/blogpost/${post._id}`)} // ✅ Fix 2
+              className="cursor-pointer max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50"
             >
               <img
                 src={post.imageUrl}
@@ -65,11 +68,11 @@ const BlogSection = () => {
                 </span>
                 <p>{post.description.slice(0, 120)}...</p>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
-        {/* Load More button */}
+        {/* Load More */}
         <div className="flex justify-center">
           <button
             type="button"
@@ -84,4 +87,3 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
-            

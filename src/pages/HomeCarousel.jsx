@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const ModernImageCarousel = () => {
   return (
-    <div className="w-full mt-2 rounded-none overflow-hidden shadow-xl">
+    <div className="w-full rounded-none overflow-hidden shadow-xl">
       <Carousel
         showThumbs={false}
         showStatus={false}
