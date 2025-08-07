@@ -4,9 +4,9 @@ import { useNavigate, NavLink } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
-const myProfile = () => {
+const Profile = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
 
@@ -68,4 +68,4 @@ const myProfile = () => {
   );
 };
 
-export default myProfile;
+export default Profile;
